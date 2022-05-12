@@ -1,0 +1,142 @@
+body {
+  padding: 0px;
+  background-image: url("/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.headline {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.headline h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 46px;
+}
+.headline div {
+  padding-bottom: 2px;
+  color: coral;
+  background: linear-gradient(to right top, coral, rgb(255, 0, 0));
+
+    -webkit-background-clip: text;
+
+    /* -webkit-text-fill-color: transparent; */
+  font-size: 19px;
+}
+
+.input-box {
+  width: 200px;
+  position: relative;
+}
+#input-area {
+  border: 2px solid coral;
+  width: 200px;
+  height: 2em;
+  border-right: 0px;
+  padding-left: 6px;
+  font-weight: bolder;
+}
+#input-area:focus {
+  outline: none !important;
+}
+
+#button-area{
+  position: absolute;
+  border: 2px solid coral;
+  height: 2em;
+  background-color: coral;
+  color: white;
+  padding-bottom: 4px;
+}
+
+
+#button-area:hover {
+  transition-duration: 0.1s;
+  background-color: red;
+  border: 2px solid red;
+}
+#button-area span:hover{
+  font-size: 20px;
+}
+
+.task-all {
+  border: 1px solid lightgray;
+}
+
+.task-area {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.task-area div {
+  padding: 1em 2em;
+  cursor: pointer;
+  font-size: 18px;
+  color: lightcoral;
+}
+.task-area div:hover {
+  background-color: beige;
+  /* font-size: 17px; */
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid lightgrey;
+  font-size: 18px;
+}
+.task div {
+  line-height: 36px;
+  height: 36px;
+}
+
+/* #underline {
+  background-color: orange;
+  height: 4px;
+  width: 70px;
+  position: absolute;
+  top: 52px;
+  left: 0px;
+  padding: 0px;
+} */
+
+.task-done {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+}
+
+
+.task button {
+  margin: 0px 2px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  margin-right: 20px;
+  line-height: 20px;
+}
+
+.task span {
+  color: #FFD700;
+  font-size: 38px;
+}
+
+
+.task span1 {
+  font-size: 28px;
+  color: red;
+}
+
+.task button span1:hover {
+  font-weight: bold;
+}
